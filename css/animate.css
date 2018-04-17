@@ -1,0 +1,71 @@
+.box {
+    background: linear-gradient(to bottom, red, white);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    left: 80%;
+    top: 20%;
+    position: absolute;
+    animation: movingbox 1s infinite;
+}
+.second {
+    animation: secondcircle 2s infinite;
+    margin: 50px; 
+    left: 30%;
+}
+@keyframes secondcircle {
+    0% {bottom: 0%; left: 0%}
+    25% {left: 25%}
+    50% {top: 50%; height: 30px; left: 50%}
+    75% {left: 75%;}
+    100% {bottom: 100%; left: 0%}
+}
+.third {
+    animation: thirdcircle 1.75s infinite;
+    margin-left: 4px; 
+    left: 50%;
+}
+@keyframes thirdcircle {
+    0% {top: 0%; height: 50px;}
+    50% {bottom: 50%; height: 25px;}
+    100% {top: 100%;}
+}
+.fourth {
+    animation: fourthcircle 2.75s infinite;
+    margin: 110px; 
+    left: 25%;
+}
+@keyframes fourthcircle {
+    0% {top: 0%; height: 50px;}
+    50% {bottom: 50%; height: 10px;}
+    100% {top: 100%;}
+}
+/*Animation: declare a name for what you want to animate using the animate 
+function.*/
+/*Declare keyframes and the name from the class above to control what the 
+object is doing.*/
+@keyframes movingbox {
+    0% {bottom: 0%;}
+    50% {top: 50%;}
+    100% {bottom: 100%;}
+}
+.fifth {
+    animation: fifthcircle 2.25s infinite;
+    margin-right: 4px; 
+    left: 40%;
+}
+@keyframes fifthcircle {
+    0% {bottom: 0%; height: 50px;}
+    50% {top: 50%; height: 30px;}
+    100% {bottom: 100%;}
+}
+.sixth {
+    animation: sixthcircle 1.5s infinite;
+    margin-bottom: 30px; 
+    left: 65%;
+}
+@keyframes sixthcircle {
+    0% {bottom: 0%; height: 20px;}
+    50% {top: 50%; height: 75px;}
+    100% {bottom: 100%;}
+}
