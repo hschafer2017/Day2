@@ -1,17 +1,30 @@
+body {
+    background: linear-gradient(to bottom, #FFC0CB, #FFEFD5, #E0FFFF, 
+    #E6E6FA);
+    /*background: radial-gradient(blue, white);*/
+    height: 100vh;
+}
+/*Linear gradients can be done from bottom, top, left, right, deg, etc. Radial 
+gradients start from the center and work out.*/
 .box {
-    background-color: red;
+    background-color: #87CEFA;
     height: 100px;
     margin: 10px;
     margin-left: 150px;
-    transition-property: transform;
-    transition-duration: 2s;
+    transition-property: all;
+    /*transition-duration: 2s;
     transition-delay: 2s;
     transition-timing-function: ease-in-out;
+    transition-property: transform;*/
+    transition: all 2s ease-in-out;
     width: 100px;
 }
 /*Make sure to have the transition property and transition duration. The delay 
 will wait for the specified amount of time for the transition to work and then
-will wait the same amount of time to go back once the cursor leaves it.*/
+will wait the same amount of time to go back once the cursor leaves it.
+The shorthand with just the "transition" with the order "property, 
+duration/delay, timing-function," so you don't need to have separate lines.
+Less is usually more with transitions.*/
 .rotate {
     transform: rotate(30deg)
 }
@@ -74,9 +87,3 @@ how you create Star Wars.*/
     width: 500px; 
 }
 
-/*.perspective .on {
-   display:none;
-}
-.perspective .off:hover {
-   display: none;
-}
