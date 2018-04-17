@@ -1,0 +1,49 @@
+.box { 
+    border: 1px solid black;
+    display: inline-block; 
+    height: 200px;
+    width: 200px; 
+    vertical-align: top;
+}
+
+@media (max-width: 767px) {
+    .box {
+        background-color: blue;
+    }
+    .mobile {
+        background-color: yellow;
+        border: 4px solid black;
+    }
+}
+/* MEDIA QUERY: This tells the code to optimize for the size browser that the 
+page is viewed on. If something is allowed 767px, or less, it's being viewed on 
+a mobile device. So, if that rule applies then the .box rules within the 
+brackets will apply.*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .box {
+        background-color: pink;
+        display: list-item;
+        height: 33.3vh;
+        width: 100%;
+        
+    }
+    .tablet {
+        background-color: purple;
+        border: 4px solid black;
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .box {
+        background-color: red;
+        display: list-item;
+        height: 33.3vh;
+        width: 100%;
+    }
+    .desktop {
+        background-color: green;
+        border: 4px solid black;
+        width: 100%;
+        
+    }
+}

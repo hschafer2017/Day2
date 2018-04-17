@@ -1,0 +1,22 @@
+.column {
+    background-color: pink;
+    display: block;
+    height: 30vh;
+    margin: 1px;
+    padding: 5px;
+    width: 100%;
+}
+@media (min-width: 992px) {
+    .column {
+    margin: 10px;
+    background-color: black;
+    width: 30%;
+}
+}
+@media (max-width: 991px) {
+    .column {
+        margin-left: none;
+        margin-right: none;
+        height: 30vh;
+    }
+}

@@ -1,0 +1,42 @@
+nav ul li a {
+    display: block;
+    color: #777;
+    font-family: sans-serif;
+    text-decoration: none;
+    /*text-decoration to none takes away the link underline.*/
+}
+
+nav ul li {
+    border-bottom: 1px solid #444;
+    background-color: #FDF5E6;
+    font-size: 30px;
+    padding: 10px 5px;
+}
+nav ul li:hover {
+    background-color: #FFF0F5;
+}
+
+nav ul {
+    list-style: none; 
+    /*Takes out bullets on the list.*/
+    text-align: center;
+}
+
+body {
+    background-color: #F0F8FF
+}
+
+@media (min-width: 768px) {
+    nav {
+        font-size: 0px;
+    }
+    nav ul {
+        background-color:#FDF5E6 
+    }
+    nav ul li {
+        border-bottom: none;
+        display: inline-block;
+        font-size: 20px;
+        width: 15%;
+    }
+}
