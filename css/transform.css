@@ -1,0 +1,82 @@
+.box {
+    background-color: red;
+    height: 100px;
+    margin: 10px;
+    margin-left: 150px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    transition-timing-function: ease-in-out;
+    width: 100px;
+}
+/*Make sure to have the transition property and transition duration. The delay 
+will wait for the specified amount of time for the transition to work and then
+will wait the same amount of time to go back once the cursor leaves it.*/
+.rotate {
+    transform: rotate(30deg)
+}
+
+.rotate:hover{
+    transform: rotate(360deg);
+    background-color: yellow;
+    transition-property: transform;
+    transition-duration: 5s;
+}
+
+.skew {
+    transform: skew(5deg, 10deg);
+}
+
+/*Skew takes the (x,y) format.*/
+
+.skew:hover {
+    transform: skew(-10deg, -5deg);
+    background-color: green;
+}
+.scale {
+    transform: scale(0.5,0.5)
+}
+.scale:hover {
+    transform: scale(1.5,1.5);
+    background-color: cyan;
+}
+.multiple {
+    transform: rotate(45deg) skew(10deg, 10deg)
+}
+.multiple:hover {
+    transform: rotate(60deg) skew(-20deg,-20deg);
+    background-color: pink;
+}
+.circle {
+    border-radius: 50%;
+}
+/*This creates a circle.*/
+.circle:hover {
+    transform: scale(0.5,0.5);
+    background-color: black;
+}
+.perspective {
+    font-size: 0px;
+    height: 200px;
+    width: 450px;
+    transform: perspective(100px) rotateX(30deg);
+    text-align: center;
+}
+/*Make sure X is added to rotate, or else the perspective won't work. This is 
+how you create Star Wars.*/
+.perspective:hover {
+    background-color: #F8F8FF;
+    font-family: sans-serif;
+    font-size: 100px;
+    height: 250px;
+    text-align: center;
+    transform: perspective(100px) rotateX(20deg);
+    width: 500px; 
+}
+
+/*.perspective .on {
+   display:none;
+}
+.perspective .off:hover {
+   display: none;
+}

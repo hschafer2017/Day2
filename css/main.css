@@ -1,22 +1,36 @@
 .column {
     background-color: pink;
     display: block;
+    float: left;
     height: 30vh;
     margin: 1px;
     padding: 5px;
     width: 100%;
 }
-@media (min-width: 992px) {
+.headings {
+    text-align: center
+}
+@media screen and (min-width: 992px) {
     .column {
+    display: inline-block;
     margin: 10px;
     background-color: black;
     width: 30%;
 }
+.mobile
+{
+    display: none;
 }
-@media (max-width: 991px) {
+}
+@media screen and (max-width: 991px) {
     .column {
         margin-left: none;
         margin-right: none;
-        height: 30vh;
     }
+    .desktop
+{
+    display: none;
 }
+}
+/*Adding the 'screen and' at beginning of media queries. This allows assistive
+technology to read code more easily.*/

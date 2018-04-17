@@ -11,7 +11,12 @@ nav ul li {
     background-color: #FDF5E6;
     font-size: 30px;
     padding: 10px 5px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
+/*The transition animations make it more aesthetically pleasing to fade 
+in and out, even if it's subtle, when hovering over a tab. Make sure to have 
+the "hover" class below.*/
 nav ul li:hover {
     background-color: #FFF0F5;
 }
